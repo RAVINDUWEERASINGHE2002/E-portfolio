@@ -1,6 +1,6 @@
 /**
- * RAVINDU LAKSHAN WEERASINGHE — PORTFOLIO CLIENT SCRIPTS
- * Lightweight Vanilla JavaScript: Animations, 3D Tilt, Filtering & Accessibility
+ * RAVINDU LAKSHAN WEERASINGHE — CLIENT INTERACTIONS
+ * High-Performance Vanilla JS: Mouse Glow, 3D Tilt, Role Rotator, Filter & Scrollspy
  */
 
 (function () {
@@ -10,68 +10,77 @@
   const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
 
   /* --------------------------------------------------------------------------
-     1. Typewriter Animation (Hero Section)
+     1. Animated Role Rotator (DevOps Enthusiast / Software Developer / AI & ML Learner)
      -------------------------------------------------------------------------- */
-  const typewriterEl = document.getElementById('typewriter');
+  const roleEl = document.getElementById('roleText');
   const roles = [
-    'DevOps Engineer',
+    'DevOps Enthusiast',
     'Software Developer',
-    'AI / ML Enthusiast',
-    'Aspiring Cloud Specialist'
+    'AI & ML Learner'
   ];
 
-  if (typewriterEl) {
+  if (roleEl) {
     if (prefersReducedMotion) {
-      typewriterEl.textContent = 'Aspiring DevOps Engineer';
+      roleEl.textContent = 'DevOps Enthusiast';
     } else {
-      let roleIndex = 0;
-      let charIndex = 0;
+      let roleIdx = 0;
+      let charIdx = 0;
       let isDeleting = false;
-      let typeSpeed = 80;
+      let delay = 90;
 
-      function typeLoop() {
-        const currentRole = roles[roleIndex];
+      function typeRole() {
+        const currentRole = roles[roleIdx];
 
         if (isDeleting) {
-          typewriterEl.textContent = currentRole.substring(0, charIndex - 1);
-          charIndex--;
-          typeSpeed = 40;
+          roleEl.textContent = currentRole.substring(0, charIdx - 1);
+          charIdx--;
+          delay = 45;
         } else {
-          typewriterEl.textContent = currentRole.substring(0, charIndex + 1);
-          charIndex++;
-          typeSpeed = 90;
+          roleEl.textContent = currentRole.substring(0, charIdx + 1);
+          charIdx++;
+          delay = 95;
         }
 
-        if (!isDeleting && charIndex === currentRole.length) {
-          typeSpeed = 1800; // Pause at end of word
+        if (!isDeleting && charIdx === currentRole.length) {
+          delay = 2000; // Pause when word completed
           isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
+        } else if (isDeleting && charIdx === 0) {
           isDeleting = false;
-          roleIndex = (roleIndex + 1) % roles.length;
-          typeSpeed = 400; // Pause before typing next word
+          roleIdx = (roleIdx + 1) % roles.length;
+          delay = 450; // Pause before typing next word
         }
 
-        setTimeout(typeLoop, typeSpeed);
+        setTimeout(typeRole, delay);
       }
 
-      // Initial start delay
-      setTimeout(typeLoop, 800);
+      setTimeout(typeRole, 700);
     }
   }
 
   /* --------------------------------------------------------------------------
-     2. Scroll-Triggered Reveal (IntersectionObserver)
+     2. Mouse-Following Ambient Cursor Glow
      -------------------------------------------------------------------------- */
-  const revealElements = document.querySelectorAll('.reveal');
+  const cursorGlow = document.getElementById('cursorGlow');
+  if (cursorGlow && hasFinePointer && !prefersReducedMotion) {
+    window.addEventListener('mousemove', (e) => {
+      cursorGlow.style.left = `${e.clientX}px`;
+      cursorGlow.style.top = `${e.clientY}px`;
+    }, { passive: true });
+  }
+
+  /* --------------------------------------------------------------------------
+     3. Smooth Scroll-Triggered Reveals (IntersectionObserver)
+     -------------------------------------------------------------------------- */
+  const revealElements = document.querySelectorAll('.scroll-reveal');
 
   if (revealElements.length > 0) {
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-      revealElements.forEach(el => el.classList.add('is-revealed'));
+      revealElements.forEach(el => el.classList.add('is-visible'));
     } else {
       const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('is-revealed');
+            entry.target.classList.add('is-visible');
             observer.unobserve(entry.target);
           }
         });
@@ -85,38 +94,9 @@
   }
 
   /* --------------------------------------------------------------------------
-     3. Active Navigation State (Scrollspy)
+     4. Interactive 3D Perspective Card Tilt
      -------------------------------------------------------------------------- */
-  const navLinks = document.querySelectorAll('#navlinks .nav-link');
-  const sections = document.querySelectorAll('section[id]');
-
-  if (sections.length > 0 && navLinks.length > 0 && 'IntersectionObserver' in window) {
-    const spyObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const currentId = entry.target.getAttribute('id');
-          navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === `#${currentId}`) {
-              link.classList.add('active');
-            } else {
-              link.classList.remove('active');
-            }
-          });
-        }
-      });
-    }, {
-      threshold: 0.25,
-      rootMargin: '-70px 0px -40% 0px'
-    });
-
-    sections.forEach(sec => spyObserver.observe(sec));
-  }
-
-  /* --------------------------------------------------------------------------
-     4. Interactive 3D Card Tilt with Radial Glow
-     -------------------------------------------------------------------------- */
-  const tiltCards = document.querySelectorAll('[data-tilt]');
+  const tiltCards = document.querySelectorAll('.tilt-element');
 
   if (tiltCards.length > 0 && hasFinePointer && !prefersReducedMotion) {
     tiltCards.forEach(card => {
@@ -135,8 +115,8 @@
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const rotateX = ((y - centerY) / centerY) * -5.5; // Max 5.5deg
-        const rotateY = ((x - centerX) / centerX) * 5.5;  // Max 5.5deg
+        const rotateX = ((y - centerY) / centerY) * -5.0; // Max 5deg
+        const rotateY = ((x - centerX) / centerX) * 5.0;  // Max 5deg
 
         const mouseXPercent = (x / rect.width) * 100;
         const mouseYPercent = (y / rect.height) * 100;
@@ -154,29 +134,28 @@
   }
 
   /* --------------------------------------------------------------------------
-     5. Filterable Projects Showcase
+     5. Category Filter for Projects
      -------------------------------------------------------------------------- */
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const filterChips = document.querySelectorAll('.filter-chip');
+  const projectCards = document.querySelectorAll('.project-showcase-card');
 
-  if (filterButtons.length > 0 && projectCards.length > 0) {
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Update active filter button state
-        filterButtons.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
+  if (filterChips.length > 0 && projectCards.length > 0) {
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-selected', 'false');
         });
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
+        chip.classList.add('active');
+        chip.setAttribute('aria-selected', 'true');
 
-        const filterValue = btn.getAttribute('data-filter');
+        const filter = chip.getAttribute('data-filter');
 
         projectCards.forEach(card => {
           const categories = card.getAttribute('data-category') || '';
           const categoryList = categories.split(' ');
 
-          if (filterValue === 'all' || categoryList.includes(filterValue)) {
+          if (filter === 'all' || categoryList.includes(filter)) {
             card.classList.remove('is-hidden');
           } else {
             card.classList.add('is-hidden');
@@ -187,77 +166,104 @@
   }
 
   /* --------------------------------------------------------------------------
-     6. Accessible Mobile Navigation
+     6. Navigation Scrollspy (Active Section Highlighting)
      -------------------------------------------------------------------------- */
-  const menuBtn = document.querySelector('.menu');
-  const navList = document.querySelector('#navlinks');
+  const navItems = document.querySelectorAll('.nav-menu .nav-item');
+  const sections = document.querySelectorAll('section[id]');
 
-  if (menuBtn && navList) {
-    function toggleMenu(forceClose = false) {
-      const isOpen = forceClose ? false : !navList.classList.contains('open');
-      navList.classList.toggle('open', isOpen);
-      menuBtn.classList.toggle('open', isOpen);
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-      menuBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-    }
-
-    menuBtn.addEventListener('click', () => toggleMenu());
-
-    // Close menu when clicking any nav link
-    navList.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => toggleMenu(true));
+  if (sections.length > 0 && navItems.length > 0 && 'IntersectionObserver' in window) {
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentId = entry.target.getAttribute('id');
+          navItems.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === `#${currentId}`) {
+              item.classList.add('active');
+            } else {
+              item.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, {
+      threshold: 0.25,
+      rootMargin: '-70px 0px -40% 0px'
     });
 
-    // Close menu when pressing Escape key
+    sections.forEach(sec => spyObserver.observe(sec));
+  }
+
+  /* --------------------------------------------------------------------------
+     7. Accessible Mobile Navigation
+     -------------------------------------------------------------------------- */
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (hamburgerBtn && navMenu) {
+    function toggleNav(forceClose = false) {
+      const isOpen = forceClose ? false : !navMenu.classList.contains('open');
+      navMenu.classList.toggle('open', isOpen);
+      hamburgerBtn.classList.toggle('open', isOpen);
+      hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+      hamburgerBtn.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+    }
+
+    hamburgerBtn.addEventListener('click', () => toggleNav());
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => toggleNav(true));
+    });
+
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && navList.classList.contains('open')) {
-        toggleMenu(true);
-        menuBtn.focus();
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        toggleNav(true);
+        hamburgerBtn.focus();
       }
     });
   }
 
   /* --------------------------------------------------------------------------
-     7. Click to Copy Email
+     8. One-Click Copy Email to Clipboard
      -------------------------------------------------------------------------- */
   const copyBtn = document.getElementById('copyEmailBtn');
   const copyFeedback = document.getElementById('copyFeedback');
-  const emailText = 'Ravinduweerasinghe5739422@gmail.com';
+  const emailVal = 'Ravinduweerasinghe5739422@gmail.com';
 
   if (copyBtn && copyFeedback) {
     copyBtn.addEventListener('click', async () => {
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
-          await navigator.clipboard.writeText(emailText);
+          await navigator.clipboard.writeText(emailVal);
         } else {
-          // Fallback for older browsers
-          const textArea = document.createElement('textarea');
-          textArea.value = emailText;
-          textArea.style.position = 'fixed';
-          textArea.style.opacity = '0';
-          document.body.appendChild(textArea);
-          textArea.focus();
-          textArea.select();
+          const ta = document.createElement('textarea');
+          ta.value = emailVal;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
           document.execCommand('copy');
-          document.body.removeChild(textArea);
+          document.body.removeChild(ta);
         }
 
         const originalText = copyFeedback.textContent;
         copyFeedback.textContent = 'Copied to Clipboard! ✓';
-        copyBtn.style.background = '#1b3b68';
+        copyBtn.style.borderColor = '#00f0ff';
+        copyBtn.style.color = '#fff';
 
         setTimeout(() => {
           copyFeedback.textContent = originalText;
-          copyBtn.style.background = '';
+          copyBtn.style.borderColor = '';
+          copyBtn.style.color = '';
         }, 2200);
       } catch (err) {
-        console.error('Failed to copy email:', err);
+        console.error('Copy failed:', err);
       }
     });
   }
 
   /* --------------------------------------------------------------------------
-     8. Dynamic Year in Footer
+     9. Dynamic Footer Year
      -------------------------------------------------------------------------- */
   const yearEl = document.getElementById('year');
   if (yearEl) {

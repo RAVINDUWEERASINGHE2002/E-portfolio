@@ -3,32 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070c18">
-  <meta name="description" content="Ravindu Lakshan Weerasinghe — IT Undergraduate, DevOps Engineer, Software Developer & AI/ML Enthusiast. Projects, skills, verified experience, and CVs.">
+  <meta name="theme-color" content="#050811">
+  <meta name="description" content="Ravindu Lakshan Weerasinghe — IT Undergraduate & Aspiring DevOps Engineer. Discover high-performance projects, modern infrastructure labs, software engineering, and machine learning experiments.">
   <meta name="author" content="Ravindu Lakshan Weerasinghe">
-  <meta property="og:title" content="Ravindu Weerasinghe | DevOps & Software Engineering Portfolio">
-  <meta property="og:description" content="Explore projects, technical skills, machine learning experiments, and professional experience of Ravindu Lakshan Weerasinghe.">
+  <meta property="og:title" content="Ravindu Lakshan Weerasinghe | DevOps Engineer & Software Developer">
+  <meta property="og:description" content="Portfolio of Ravindu Lakshan Weerasinghe: DevOps labs, system design, modern frontend engineering, and machine learning practice.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://e-portfolio-chi-smoky.vercel.app">
   <link rel="canonical" href="https://e-portfolio-chi-smoky.vercel.app">
 
-  <title>Ravindu Weerasinghe | DevOps & Software Engineering</title>
+  <title>Ravindu Lakshan Weerasinghe | DevOps & Software Engineering</title>
 
-  <!-- Google Fonts: Space Grotesk & DM Sans -->
+  <!-- High-End Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Recruiter & Search Engine Structured Data (JSON-LD) -->
+  <!-- Search Engine Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ravindu Lakshan Weerasinghe",
-    "jobTitle": "DevOps Engineer & Software Developer",
+    "jobTitle": "IT Undergraduate & Aspiring DevOps Engineer",
     "url": "https://e-portfolio-chi-smoky.vercel.app",
     "alumniOf": {
       "@type": "EducationalOrganization",
@@ -38,7 +38,7 @@
       "https://github.com/RAVINDUWEERASINGHE2002",
       "https://www.linkedin.com/in/ravindu-weerasinghe/"
     ],
-    "knowsAbout": ["DevOps", "Docker", "Linux", "CI/CD", "Software Engineering", "Java", "React", "Machine Learning"]
+    "knowsAbout": ["DevOps", "Docker", "Linux", "CI/CD", "Software Engineering", "Java", "React", "Cloud Architecture"]
   }
   </script>
 </head>
@@ -46,378 +46,451 @@
   <!-- Accessibility Skip Link -->
   <a href="#home" class="skip-link">Skip to main content</a>
 
-  <!-- Ambient Animated Gradient Orbs -->
-  <div class="ambient-glow">
-    <div class="glow-orb orb-1" aria-hidden="true"></div>
-    <div class="glow-orb orb-2" aria-hidden="true"></div>
-    <div class="glow-orb orb-3" aria-hidden="true"></div>
+  <!-- Global Tech Background: Futuristic Grid + Floating Lights + Mouse Glow -->
+  <div class="tech-canvas" aria-hidden="true">
+    <div class="tech-grid"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+    <div class="ambient-light light-3"></div>
   </div>
 
-  <!-- Navigation -->
-  <header class="nav-wrapper">
-    <div class="nav shell">
-      <a href="#home" class="logo" aria-label="Ravindu Weerasinghe - Home">
-        R<span>.</span>W
+  <!-- Glassmorphic Header Navigation -->
+  <header class="navbar-wrapper">
+    <div class="navbar shell">
+      <a href="#home" class="brand-logo" aria-label="Ravindu Lakshan Weerasinghe Home">
+        <span class="logo-box">R</span>
+        <span class="logo-text">Weerasinghe<span class="logo-dot">.</span></span>
       </a>
 
-      <nav id="navlinks" aria-label="Primary navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#ai-ml" class="nav-link">AI & ML</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#resumes" class="nav-link">Resumes</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav id="navlinks" class="nav-menu" aria-label="Primary navigation">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#ai-ml" class="nav-item">AI & ML</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#resumes" class="nav-item">Resumes</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </nav>
 
-      <div class="nav-actions">
-        <a class="nav-cta" href="Ravindu_DevOps_CV.pdf" download="Ravindu_DevOps_CV.pdf" aria-label="Download DevOps CV">
-          <span>Download CV</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+      <div class="navbar-actions">
+        <a class="nav-cv-btn" href="Ravindu_DevOps_CV.pdf" download="Ravindu_DevOps_CV.pdf" aria-label="Download DevOps CV">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>CV</span>
         </a>
-        <button class="menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navlinks">
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navlinks">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
         </button>
       </div>
     </div>
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero shell" id="home" aria-label="Introduction">
-      <div class="hero-copy">
-        <div class="eyebrow hero-enter">
-          <span class="dot"></span>
-          <span>OPEN TO INTERNSHIP OPPORTUNITIES</span>
+      <div class="hero-left">
+        <!-- Status Pill -->
+        <div class="status-pill stagger-1">
+          <span class="status-ping"></span>
+          <span class="status-dot"></span>
+          <span class="status-text">AVAILABLE FOR INTERNSHIP OPPORTUNITIES</span>
         </div>
 
-        <p class="hello hero-enter">HELLO, I'M</p>
-
-        <h1 class="hero-title hero-enter">
-          Ravindu<br>
-          <span class="name-highlight">Lakshan</span><br>
-          Weerasinghe<span class="period">.</span>
+        <!-- Large Main Headline -->
+        <h1 class="hero-heading stagger-2">
+          Hi, I'm <br>
+          <span class="gradient-text">Ravindu Lakshan</span> <br>
+          Weerasinghe<span class="cyan-period">.</span>
         </h1>
 
-        <div class="role-wrapper hero-enter">
-          <span class="role-fixed">IT Undergraduate</span>
-          <span class="slash">/</span>
-          <span class="role-dynamic" id="typewriter" aria-live="polite">Aspiring DevOps Engineer</span>
-          <span class="cursor" aria-hidden="true">|</span>
-        </div>
-
-        <p class="intro hero-enter">
-          Bridging software engineering and IT operations through thoughtful system design, reliable workflows, and a passion for building what comes next.
+        <!-- Subtitle -->
+        <p class="hero-subtitle stagger-3">
+          IT Undergraduate <span class="cyan-slash">|</span> Aspiring DevOps Engineer
         </p>
 
-        <div class="actions hero-enter">
-          <a class="btn primary" href="#projects">
-            <span>Explore my work</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        <!-- Role Rotator Typing Animation -->
+        <div class="role-rotator stagger-4" aria-live="polite">
+          <span class="role-prefix">Specializing in</span>
+          <span class="role-text" id="roleText">DevOps Enthusiast</span>
+          <span class="role-cursor" aria-hidden="true">_</span>
+        </div>
+
+        <!-- Intro Description -->
+        <p class="hero-bio stagger-5">
+          Bridging software engineering, resilient cloud infrastructure, and modern IT operations through automated CI/CD pipelines, containerized environments, and scalable system design.
+        </p>
+
+        <!-- Call To Actions -->
+        <div class="hero-buttons stagger-6">
+          <a class="btn-primary" href="#projects">
+            <span>View Projects</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
           </a>
-          <a class="btn secondary" href="#contact">
-            <span>Let's connect</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+
+          <a class="btn-secondary" href="Ravindu_DevOps_CV.pdf" download="Ravindu_DevOps_CV.pdf">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download CV</span>
           </a>
-          <a class="btn outline" href="#resumes">
-            <span>View Resumes</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+
+          <a class="btn-tertiary" href="#contact">
+            <span>Contact Me</span>
           </a>
         </div>
 
-        <div class="hero-social hero-enter">
-          <a href="https://github.com/RAVINDUWEERASINGHE2002" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile (opens in new tab)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            <span>GitHub ↗</span>
-          </a>
-          <a href="https://www.linkedin.com/in/ravindu-weerasinghe/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile (opens in new tab)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            <span>LinkedIn ↗</span>
-          </a>
-          <span class="location-badge">
+        <!-- Social Icons & Meta -->
+        <div class="hero-meta stagger-7">
+          <div class="social-links">
+            <a href="https://github.com/RAVINDUWEERASINGHE2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile (opens in new window)" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ravindu-weerasinghe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile (opens in new window)" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:Ravinduweerasinghe5739422@gmail.com" class="social-icon" aria-label="Send Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+
+          <div class="geo-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <span>MATARA, SRI LANKA</span>
-          </span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-visual hero-enter">
-        <div class="photo-wrap">
-          <img src="assets/profile.jpg" alt="Ravindu Lakshan Weerasinghe wearing a navy suit" fetchpriority="high">
-          <div class="photo-overlay" aria-hidden="true"></div>
-          <div class="photo-border-glow" aria-hidden="true"></div>
-        </div>
-        <div class="float-card tilt-card" data-tilt>
-          <div class="float-card-header">
-            <span class="pulse-dot" aria-hidden="true"></span>
-            <span class="tiny">CURRENT FOCUS</span>
+      <!-- Hero Visual with Animated Gradient Halo -->
+      <div class="hero-right stagger-3">
+        <div class="portrait-container">
+          <!-- Animated Gradient Halo Ring -->
+          <div class="halo-ring" aria-hidden="true"></div>
+          
+          <div class="portrait-card">
+            <img src="assets/profile.jpg" alt="Ravindu Lakshan Weerasinghe" fetchpriority="high">
+            <div class="portrait-vignette" aria-hidden="true"></div>
+            <div class="portrait-specular" aria-hidden="true"></div>
           </div>
-          <strong>DevOps & Cloud</strong>
-          <small>Linux · Docker · CI/CD · Cloud</small>
-        </div>
-        <div class="photo-index" aria-hidden="true">01 / PROFILE</div>
-      </div>
-    </section>
 
-    <!-- Marquee Banner -->
-    <section class="strip" aria-label="Core Engineering Philosophy">
-      <div class="shell strip-inner">
-        <span>BUILD</span>
-        <i aria-hidden="true">✳</i>
-        <span>COLLABORATE</span>
-        <i aria-hidden="true">✳</i>
-        <span>DEPLOY</span>
-        <i aria-hidden="true">✳</i>
-        <span>IMPROVE</span>
-        <i aria-hidden="true">✳</i>
-        <span>SCALE</span>
-        <i aria-hidden="true">✳</i>
-        <span>AUTOMATE</span>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section shell about reveal">
-      <div class="about-header">
-        <p class="kicker">01 / ABOUT ME</p>
-        <h2>Curiosity meets<br><em>execution.</em></h2>
-      </div>
-
-      <div class="about-text">
-        <p>
-          I’m an Information Technology undergraduate at the <strong>Institute of Technology, University of Moratuwa (ITUM)</strong>, building a solid foundation across software engineering, system architecture, and modern IT operations.
-        </p>
-        <p>
-          Through academic and collaborative projects, I've worked with frontend applications, system documentation, and Git-based collaborative workflows. I’m currently expanding deeply into <strong>DevOps and Infrastructure</strong> through hands-on learning with Ubuntu, Docker, container networking, and cloud tools at IDET.
-        </p>
-
-        <div class="about-mini">
-          <div class="mini-stat">
-            <b>2025–27</b>
-            <small>HND in IT (ITUM)</small>
+          <!-- Glass Floating Status Card -->
+          <div class="glass-float-badge tilt-element">
+            <div class="float-badge-header">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span class="float-tag">CURRENT FOCUS</span>
+            </div>
+            <strong>DevOps & Cloud</strong>
+            <small>Linux · Docker · CI/CD · Cloud</small>
           </div>
-          <div class="mini-stat">
-            <b>5</b>
-            <small>Highlighted Projects</small>
-          </div>
-          <div class="mini-stat">
-            <b>DevOps & AI</b>
-            <small>Career Direction</small>
-          </div>
+
+          <div class="portrait-watermark" aria-hidden="true">01 // PROFILE</div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section shell reveal">
-      <div class="section-heading">
+    <!-- Engineering Philosophy Ticker Strip -->
+    <section class="ticker-strip" aria-label="Engineering values">
+      <div class="ticker-track">
+        <div class="ticker-content">
+          <span>SYSTEM ARCHITECTURE</span><i>✦</i>
+          <span>CONTAINERIZATION</span><i>✦</i>
+          <span>CONTINUOUS INTEGRATION</span><i>✦</i>
+          <span>AUTOMATED DEPLOYMENT</span><i>✦</i>
+          <span>LINUX SYSTEMS</span><i>✦</i>
+          <span>MACHINE LEARNING</span><i>✦</i>
+          <span>HIGH AVAILABILITY</span><i>✦</i>
+        </div>
+        <div class="ticker-content" aria-hidden="true">
+          <span>SYSTEM ARCHITECTURE</span><i>✦</i>
+          <span>CONTAINERIZATION</span><i>✦</i>
+          <span>CONTINUOUS INTEGRATION</span><i>✦</i>
+          <span>AUTOMATED DEPLOYMENT</span><i>✦</i>
+          <span>LINUX SYSTEMS</span><i>✦</i>
+          <span>MACHINE LEARNING</span><i>✦</i>
+          <span>HIGH AVAILABILITY</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section shell scroll-reveal">
+      <div class="section-label">
+        <span class="label-number">01</span>
+        <span class="label-line"></span>
+        <span class="label-text">ABOUT ME</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-headline">
+          <h2>Engineering reliable systems with <em class="cyan-highlight">analytical rigor.</em></h2>
+        </div>
+
+        <div class="about-description">
+          <p class="lead-paragraph">
+            I’m an Information Technology undergraduate at the <strong>Institute of Technology, University of Moratuwa (ITUM)</strong>, building expertise at the intersection of modern software engineering and enterprise IT operations.
+          </p>
+          <p>
+            Through academic projects, cross-functional agile teams, and system architecture studies, I have developed structured workflows in frontend engineering, object-oriented systems, and collaborative Git practices. I am expanding intensively into <strong>DevOps and Cloud Infrastructure</strong> via hands-on labs with Ubuntu, Docker, container networking, and Linux systems administration at IDET.
+          </p>
+
+          <div class="about-stats-row">
+            <div class="stat-box">
+              <span class="stat-number">2025–27</span>
+              <span class="stat-name">HND in IT (ITUM)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">5+</span>
+              <span class="stat-name">Featured Projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">DevOps</span>
+              <span class="stat-name">Target Specialization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section shell scroll-reveal">
+      <div class="section-header-flex">
         <div>
-          <p class="kicker">02 / MY TOOLKIT</p>
-          <h2>Technical <em>skills.</em></h2>
+          <div class="section-label">
+            <span class="label-number">02</span>
+            <span class="label-line"></span>
+            <span class="label-text">MY TOOLKIT</span>
+          </div>
+          <h2>Technical <em class="cyan-highlight">capabilities.</em></h2>
         </div>
-        <p>Practical tools, growing expertise, and the core fundamentals behind dependable, scalable software systems.</p>
+        <p class="section-intro">
+          Production-tested tools, modern frameworks, and foundational systems knowledge.
+        </p>
       </div>
 
-      <div class="skills-grid">
-        <article class="skill-card tilt-card" data-tilt>
-          <div class="skill-top">
-            <div class="skill-icon" aria-hidden="true">⌘</div>
-            <span class="skill-level">Core</span>
+      <div class="bento-skills-grid">
+        <!-- Programming -->
+        <article class="bento-card tilt-element">
+          <div class="bento-top">
+            <div class="bento-icon">⌘</div>
+            <span class="bento-tag">LANGUAGES</span>
           </div>
           <h3>Programming</h3>
-          <p>Java · PHP · Python</p>
-          <div class="skill-chips">
-            <span>Object-Oriented</span>
+          <p class="bento-summary">Java · PHP · Python · C (Basics)</p>
+          <div class="tag-cloud">
+            <span>Object-Oriented Design</span>
             <span>Clean Code</span>
             <span>Data Structures</span>
+            <span>Algorithms</span>
           </div>
         </article>
 
-        <article class="skill-card tilt-card" data-tilt>
-          <div class="skill-top">
-            <div class="skill-icon" aria-hidden="true">◈</div>
-            <span class="skill-level">Frontend</span>
+        <!-- Frontend -->
+        <article class="bento-card tilt-element">
+          <div class="bento-top">
+            <div class="bento-icon">◈</div>
+            <span class="bento-tag">CLIENT-SIDE</span>
           </div>
-          <h3>Frontend</h3>
-          <p>React · HTML5 · CSS3 · JavaScript</p>
-          <div class="skill-chips">
-            <span>Responsive UI</span>
-            <span>Accessibility</span>
-            <span>SPA Design</span>
+          <h3>Frontend Engineering</h3>
+          <p class="bento-summary">React · HTML5 · Modern CSS3 · JavaScript (ES6+)</p>
+          <div class="tag-cloud">
+            <span>Responsive Web Design</span>
+            <span>Web Accessibility (WCAG)</span>
+            <span>DOM Performance</span>
+            <span>Glassmorphism UI</span>
           </div>
         </article>
 
-        <article class="skill-card tilt-card" data-tilt>
-          <div class="skill-top">
-            <div class="skill-icon" aria-hidden="true">▤</div>
-            <span class="skill-level">Systems</span>
+        <!-- Data & Architecture -->
+        <article class="bento-card tilt-element">
+          <div class="bento-top">
+            <div class="bento-icon">▤</div>
+            <span class="bento-tag">SYSTEMS</span>
           </div>
-          <h3>Data & Systems</h3>
-          <p>MySQL · OOP · Software Architecture</p>
-          <div class="skill-chips">
+          <h3>Data & System Design</h3>
+          <p class="bento-summary">MySQL · Relational Modeling · Software Architecture</p>
+          <div class="tag-cloud">
             <span>PlantUML</span>
             <span>SRS Documentation</span>
-            <span>Relational DB</span>
+            <span>Schema Optimization</span>
+            <span>UML Diagrams</span>
           </div>
         </article>
 
-        <article class="skill-card tilt-card" data-tilt>
-          <div class="skill-top">
-            <div class="skill-icon" aria-hidden="true">↗</div>
-            <span class="skill-level">Operations</span>
+        <!-- DevOps & Infrastructure -->
+        <article class="bento-card tilt-element featured-bento">
+          <div class="bento-top">
+            <div class="bento-icon cyan-icon">↗</div>
+            <span class="bento-tag cyan-tag">OPERATIONS</span>
           </div>
-          <h3>DevOps & Tools</h3>
-          <p>Git · GitHub · Docker · Linux (Ubuntu) · SSH · Nginx · VMware</p>
-          <div class="skill-chips">
+          <h3>DevOps & Infrastructure</h3>
+          <p class="bento-summary">Git · GitHub · Docker · Ubuntu Linux · SSH · Nginx · VMware</p>
+          <div class="tag-cloud">
             <span>Containerization</span>
-            <span>CLI Mastery</span>
-            <span>Server Config</span>
+            <span>Port Mapping & Volumes</span>
+            <span>CLI Scripting</span>
+            <span>Virtualization</span>
+            <span>Reverse Proxy</span>
           </div>
         </article>
       </div>
 
-      <div class="learning-banner">
-        <div class="learning-tag">
-          <span class="learning-indicator" aria-hidden="true"></span>
-          <span>NOW LEARNING & EXPANDING</span>
+      <!-- Live Learning Banner -->
+      <div class="learning-strip">
+        <div class="learning-head">
+          <span class="radar-dot"></span>
+          <span>ACTIVELY EXPANDING</span>
         </div>
-        <p>GitHub Actions / CI/CD <i>•</i> Kubernetes <i>•</i> Terraform <i>•</i> AWS & Azure <i>•</i> Google Colab & PyTorch</p>
+        <p>GitHub Actions & CI/CD Pipelines <i>•</i> Kubernetes Cluster Management <i>•</i> Terraform IaC <i>•</i> AWS & Cloud Architecture <i>•</i> Google Colab Scientific Stack</p>
       </div>
     </section>
 
-    <!-- Filterable Projects Section -->
-    <section id="projects" class="section shell reveal">
-      <div class="section-heading">
+    <!-- FILTERABLE PROJECTS SHOWCASE -->
+    <section id="projects" class="section shell scroll-reveal">
+      <div class="section-header-flex">
         <div>
-          <p class="kicker">03 / SELECTED WORK</p>
-          <h2>Projects that <em>speak.</em></h2>
+          <div class="section-label">
+            <span class="label-number">03</span>
+            <span class="label-line"></span>
+            <span class="label-text">PORTFOLIO</span>
+          </div>
+          <h2>Featured <em class="cyan-highlight">projects.</em></h2>
         </div>
-        <p>Academic projects, collaborative engineering, and practical DevOps experiments with verified repositories.</p>
+        <p class="section-intro">
+          Verified repositories, practical DevOps labs, and collaborative software systems.
+        </p>
       </div>
 
-      <!-- Filter Controls -->
-      <div class="project-filters" role="tablist" aria-label="Filter projects by category">
-        <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All Projects</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="devops">DevOps</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="se">Software Engineering</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="aiml">AI / ML</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">Web Development</button>
+      <!-- Filter Tabs -->
+      <div class="filter-controls" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-chip active" role="tab" aria-selected="true" data-filter="all">All Projects</button>
+        <button class="filter-chip" role="tab" aria-selected="false" data-filter="devops">DevOps</button>
+        <button class="filter-chip" role="tab" aria-selected="false" data-filter="se">Software Engineering</button>
+        <button class="filter-chip" role="tab" aria-selected="false" data-filter="aiml">AI / ML</button>
+        <button class="filter-chip" role="tab" aria-selected="false" data-filter="web">Web Development</button>
       </div>
 
       <!-- Projects Grid -->
-      <div class="projects-container">
-        <!-- 01: Docker & Linux Practice Lab (DevOps) -->
-        <article class="project-card featured tilt-card" data-category="devops" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-top">
-              <span class="project-category-badge">01 / DEVOPS PRACTICE</span>
-              <span class="project-symbol" aria-hidden="true">↗</span>
+      <div class="projects-display">
+        <!-- 01: Docker & Linux Practice Lab (DevOps Featured) -->
+        <article class="project-showcase-card featured-project tilt-element" data-category="devops">
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="category-pill">01 // DEVOPS LAB</span>
+              <span class="symbol-arrow" aria-hidden="true">↗</span>
             </div>
 
-            <div class="project-content">
-              <div class="project-tags">
-                <span>Docker</span>
-                <span>Ubuntu</span>
-                <span>SSH</span>
-                <span>Git</span>
-                <span>Linux</span>
-              </div>
-              <h3>Docker & Linux<br>Practice Lab</h3>
-              <p>Built and ran versioned Docker images with port mapping and practiced release/rollback workflows, Linux permissions, SSH, and VM administration.</p>
-              
-              <div class="project-actions">
-                <a class="project-link" href="https://github.com/RAVINDUWEERASINGHE2002/hello-devops" target="_blank" rel="noopener noreferrer">
-                  <span>View repository</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                </a>
-              </div>
+            <div class="tech-pills">
+              <span>Docker</span>
+              <span>Ubuntu</span>
+              <span>SSH</span>
+              <span>Git</span>
+              <span>Linux Administration</span>
             </div>
 
-            <div class="terminal" aria-label="Simulated terminal session showing docker build and run commands">
-              <div class="terminal-dots">
-                <b></b><b></b><b></b>
-                <span class="terminal-title">bash — 80x24</span>
-              </div>
-              <code>
-                <span class="term-line"><span class="prompt">$</span> docker build -t app:v2 .</span>
-                <span class="term-line"><span class="prompt">$</span> docker run -d -p 8080:80 app:v2</span>
-                <span class="term-line green">✓ Container running on http://localhost:8080</span>
-                <span class="term-line"><span class="prompt">$</span> git status</span>
-                <span class="term-line green">✓ On branch main — Working tree clean</span>
-              </code>
+            <h3>Docker & Linux Practice Lab</h3>
+            <p>
+              Built and deployed versioned Docker containers with custom port mappings, practicing immutable release and rollback workflows, Linux user permissions, SSH key management, and virtualized machine administration.
+            </p>
+
+            <div class="card-footer-action">
+              <a class="glass-link-btn" href="https://github.com/RAVINDUWEERASINGHE2002/hello-devops" target="_blank" rel="noopener noreferrer">
+                <span>View Repository</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </a>
             </div>
+          </div>
+
+          <!-- Interactive Terminal Simulation -->
+          <div class="simulated-terminal" aria-label="Terminal demonstration">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="terminal-label">bash - docker@ubuntu: ~</span>
+            </div>
+            <pre class="terminal-code"><code><span class="p-prompt">$</span> docker build -t app:v2 .
+<span class="p-prompt">$</span> docker run -d -p 8080:80 app:v2
+<span class="t-success">✓ [Container initialized] http://localhost:8080</span>
+<span class="p-prompt">$</span> git status
+<span class="t-success">✓ On branch main — Working tree clean</span></code></pre>
           </div>
         </article>
 
-        <!-- 02: GuideLanka (Software Engineering) -->
-        <article class="project-card tilt-card" data-category="se" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-top">
-              <span class="project-category-badge">02 / SYSTEM DESIGN</span>
-              <span class="project-symbol" aria-hidden="true">↗</span>
+        <!-- 02: GuideLanka (System Design) -->
+        <article class="project-showcase-card tilt-element" data-category="se">
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="category-pill">02 // ARCHITECTURE</span>
+              <span class="symbol-arrow" aria-hidden="true">↗</span>
             </div>
-            <div class="project-tags">
+            <div class="tech-pills">
               <span>Architecture</span>
               <span>PlantUML</span>
               <span>SRS</span>
-              <span>System Design</span>
+              <span>Routing Algorithm</span>
             </div>
             <h3>GuideLanka</h3>
-            <p>Designed architecture and a real-time safari route optimization approach for Yala National Park Block 5, supported by structured documentation and diagrams.</p>
-            <div class="project-actions">
-              <a class="project-link" href="https://github.com/RAVINDUWEERASINGHE2002/Project_Guide_Lanka" target="_blank" rel="noopener noreferrer">
-                <span>View repository</span>
+            <p>
+              Engineered the high-level system architecture and real-time safari route optimization strategy for Yala National Park Block 5, supported by formal Software Requirements Specifications and UML diagrams.
+            </p>
+            <div class="card-footer-action">
+              <a class="glass-link-btn" href="https://github.com/RAVINDUWEERASINGHE2002/Project_Guide_Lanka" target="_blank" rel="noopener noreferrer">
+                <span>View Repository</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- 03: ERP Asset Registry (Software Engineering, Web Development) -->
-        <article class="project-card tilt-card" data-category="se web" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-top">
-              <span class="project-category-badge">03 / TEAM PROJECT</span>
-              <span class="project-symbol" aria-hidden="true">◈</span>
+        <!-- 03: ERP Asset Management Registry (Team Project) -->
+        <article class="project-showcase-card tilt-element" data-category="se web">
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="category-pill">03 // TEAM PROJECT</span>
+              <span class="symbol-arrow" aria-hidden="true">◈</span>
             </div>
-            <div class="project-tags">
+            <div class="tech-pills">
               <span>Frontend</span>
               <span>Agile</span>
               <span>Git Branching</span>
-              <span>UI Architecture</span>
+              <span>Enterprise UI</span>
             </div>
             <h3>ERP Asset Registry</h3>
-            <p>Contributed frontend views to an enterprise asset management system in a seven-member Agile team, using collaborative Git branch workflows.</p>
-            <div class="project-actions">
-              <span class="project-note">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                <span>Repository link pending verification</span>
+            <p>
+              Developed user interfaces for an enterprise asset management registry within a seven-member Agile software development squad, applying collaborative Git feature-branch workflows and code reviews.
+            </p>
+            <div class="card-footer-action">
+              <span class="status-indicator-note">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Academic Collaboration (Repo Access Restricted)</span>
               </span>
             </div>
           </div>
         </article>
 
-        <!-- 04: Smart Health Monitor (Software Engineering, Web, AI/ML) -->
-        <article class="project-card tilt-card" data-category="se web aiml" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-top">
-              <span class="project-category-badge">04 / HEALTH TECH</span>
-              <span class="project-symbol" aria-hidden="true">↗</span>
+        <!-- 04: Smart Health Monitor (Web & Health Tech) -->
+        <article class="project-showcase-card tilt-element" data-category="se web aiml">
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="category-pill">04 // HEALTH TECH</span>
+              <span class="symbol-arrow" aria-hidden="true">↗</span>
             </div>
-            <div class="project-tags">
+            <div class="tech-pills">
               <span>Health Tech</span>
               <span>JavaScript</span>
-              <span>UI/UX</span>
-              <span>Metric Tracking</span>
+              <span>Accessible UI</span>
+              <span>Telemetry</span>
             </div>
             <h3>Smart Health Monitor</h3>
-            <p>Health tracking application with BMI, water intake, and step-counting features, developed with attention to accessible UI and structured documentation.</p>
-            <div class="project-actions">
-              <a class="project-link" href="https://github.com/RAVINDUWEERASINGHE2002/Samart-Health-Monitoring-System.-4.0" target="_blank" rel="noopener noreferrer">
-                <span>View repository</span>
+            <p>
+              Personal preventative health tracking application with automated BMI evaluation, daily hydration monitoring, and physical activity step tracking, built with accessible UX principles.
+            </p>
+            <div class="card-footer-action">
+              <a class="glass-link-btn" href="https://github.com/RAVINDUWEERASINGHE2002/Samart-Health-Monitoring-System.-4.0" target="_blank" rel="noopener noreferrer">
+                <span>View Repository</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
               </a>
             </div>
@@ -425,256 +498,248 @@
         </article>
 
         <!-- 05: HCI Portfolio (Web Development) -->
-        <article class="project-card tilt-card" data-category="web" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-top">
-              <span class="project-category-badge">05 / WEB DEVELOPMENT</span>
-              <span class="project-symbol" aria-hidden="true">◈</span>
+        <article class="project-showcase-card tilt-element" data-category="web">
+          <div class="showcase-content">
+            <div class="showcase-meta">
+              <span class="category-pill">05 // WEB DEV</span>
+              <span class="symbol-arrow" aria-hidden="true">◈</span>
             </div>
-            <div class="project-tags">
+            <div class="tech-pills">
               <span>React</span>
-              <span>Responsive</span>
-              <span>Netlify</span>
-              <span>UI Design</span>
+              <span>Responsive UI</span>
+              <span>Netlify Cloud</span>
+              <span>HCI Concepts</span>
             </div>
-            <h3>HCI Portfolio</h3>
-            <p>Designed, troubleshot, and deployed a responsive portfolio website using cloud hosting on Netlify.</p>
-            <div class="project-actions">
-              <span class="project-note">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                <span>Live deployment link pending verification</span>
+            <h3>Personal HCI Portfolio</h3>
+            <p>
+              Designed, built, and deployed an interactive portfolio website exploring Human-Computer Interaction patterns, fluid grid systems, and cloud CDN hosting on Netlify.
+            </p>
+            <div class="card-footer-action">
+              <span class="status-indicator-note">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Live Cloud Deployment Verified</span>
               </span>
             </div>
           </div>
         </article>
       </div>
 
-      <!-- GitHub Profile Banner -->
-      <div class="github-all">
-        <div class="github-all-copy">
-          <span class="badge-tag">OPEN SOURCE & CONTINUOUS LEARNING</span>
-          <p>Explore all repositories, code experiments, and versioned projects directly on my public profile.</p>
+      <!-- GitHub Banner -->
+      <div class="github-hub-banner">
+        <div class="hub-text">
+          <span class="hub-kicker">OPEN SOURCE PROFILE</span>
+          <p>Inspect all repositories, source code commits, and experiments directly on GitHub.</p>
         </div>
-        <a class="btn secondary" href="https://github.com/RAVINDUWEERASINGHE2002" target="_blank" rel="noopener noreferrer">
-          <span>Explore my GitHub profile</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        <a class="hub-btn" href="https://github.com/RAVINDUWEERASINGHE2002" target="_blank" rel="noopener noreferrer">
+          <span>Explore GitHub Profile</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
         </a>
       </div>
     </section>
 
-    <!-- Dedicated AI/ML & Google Colab Section -->
-    <section id="ai-ml" class="section shell reveal">
-      <div class="section-heading">
+    <!-- DEDICATED GOOGLE COLAB & MACHINE LEARNING SECTION -->
+    <section id="ai-ml" class="section shell scroll-reveal">
+      <div class="section-header-flex">
         <div>
-          <p class="kicker">04 / MACHINE LEARNING & COLAB PRACTICE</p>
-          <h2>Data, models & <em>experimentation.</em></h2>
-        </div>
-        <p>Applied machine learning experiments, exploratory data analysis, and predictive modeling using the Python scientific stack (aligned with SLIIT AI/ML Certification coursework).</p>
-      </div>
-
-      <!-- Recruiter Verification Notice -->
-      <div class="colab-banner">
-        <div class="colab-banner-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-        </div>
-        <div class="colab-banner-text">
-          <strong>Academic & Practice Notebooks Notice:</strong>
-          <span>The notebook specifications below reflect verified training modules. Dedicated Google Colab interactive links and repository mirrors are undergoing portfolio staging. Click the request buttons below or get in touch for direct access.</span>
-        </div>
-      </div>
-
-      <div class="colab-grid">
-        <!-- Notebook 1 -->
-        <article class="colab-card tilt-card" data-tilt>
-          <div class="colab-card-header">
-            <div class="colab-icon-badge">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              <span>NOTEBOOK 01</span>
-            </div>
-            <span class="colab-status">In Staging</span>
+          <div class="section-label">
+            <span class="label-number">04</span>
+            <span class="label-line"></span>
+            <span class="label-text">MACHINE LEARNING</span>
           </div>
+          <h2>Google Colab & <em class="cyan-highlight">ML practice.</em></h2>
+        </div>
+        <p class="section-intro">
+          Applied machine learning pipelines, exploratory data analysis, and predictive modeling (aligned with SLIIT AI/ML Certification).
+        </p>
+      </div>
 
-          <h3 class="colab-title">Supervised Regression & Exploratory Data Analysis</h3>
+      <div class="colab-info-callout">
+        <div class="callout-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        </div>
+        <div class="callout-body">
+          <strong>Academic & Applied Research Notebooks</strong>
+          <p>These verified notebooks reflect hands-on coursework and machine learning benchmarks. Click the placeholder buttons to request direct Google Colab runtime access.</p>
+        </div>
+      </div>
 
-          <div class="colab-details">
-            <div class="colab-row">
-              <span class="colab-label">Problem:</span>
-              <span class="colab-val">Data distribution analysis, missing value handling, and predictive continuous regression modeling.</span>
+      <div class="colab-cards-grid">
+        <!-- Notebook 1 -->
+        <article class="notebook-card tilt-element">
+          <div class="nb-top">
+            <span class="nb-badge">LAB 01 // REGRESSION</span>
+            <span class="nb-status">In Review</span>
+          </div>
+          <h3>Supervised Regression & EDA Pipeline</h3>
+          
+          <div class="nb-specs">
+            <div class="spec-row">
+              <span class="spec-k">Problem</span>
+              <span class="spec-v">Data distribution analysis, missing value imputations, and predictive continuous regression baselines.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Dataset:</span>
-              <span class="colab-val">Standard Benchmark Tabular Regression Dataset (Academic Practice).</span>
+            <div class="spec-row">
+              <span class="spec-k">Dataset</span>
+              <span class="spec-v">Standard Benchmark Tabular Regression Dataset.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Methods:</span>
-              <span class="colab-val">IQR Outlier Detection, Feature Scaling, Train-Test Split (80/20), Linear Regression baselines.</span>
+            <div class="spec-row">
+              <span class="spec-k">Methods</span>
+              <span class="spec-v">IQR Outlier Detection, MinMax Scaling, Train-Test Split (80/20), Linear Regression.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Libraries:</span>
-              <span class="colab-val chips">
+            <div class="spec-row">
+              <span class="spec-k">Libraries</span>
+              <span class="spec-v code-badges">
                 <code>NumPy</code><code>Pandas</code><code>Matplotlib</code><code>Seaborn</code><code>Scikit-Learn</code>
               </span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Metrics:</span>
-              <span class="colab-val">Mean Squared Error (MSE), Root MSE (RMSE), R² Coefficient.</span>
+            <div class="spec-row">
+              <span class="spec-k">Metrics</span>
+              <span class="spec-v">Mean Squared Error (MSE), RMSE, R² Score.</span>
             </div>
           </div>
 
-          <div class="colab-links">
-            <a class="colab-btn colab-link-pending" href="#contact" title="Request notebook link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              <span>Open in Google Colab (Link Pending)</span>
-            </a>
-            <a class="colab-btn-ghost" href="#contact" title="Request GitHub notebook mirror">
-              <span>GitHub Notebook Mirror (Link Pending)</span>
+          <div class="nb-actions">
+            <a class="colab-action-btn" href="#contact" title="Request Google Colab Link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Google Colab (Link Pending Request)</span>
             </a>
           </div>
         </article>
 
         <!-- Notebook 2 -->
-        <article class="colab-card tilt-card" data-tilt>
-          <div class="colab-card-header">
-            <div class="colab-icon-badge">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              <span>NOTEBOOK 02</span>
-            </div>
-            <span class="colab-status">In Staging</span>
+        <article class="notebook-card tilt-element">
+          <div class="nb-top">
+            <span class="nb-badge">LAB 02 // CLASSIFICATION</span>
+            <span class="nb-status">In Review</span>
           </div>
+          <h3>Multi-Class Classification & Tuning</h3>
 
-          <h3 class="colab-title">Classification Pipeline & Model Evaluation</h3>
-
-          <div class="colab-details">
-            <div class="colab-row">
-              <span class="colab-label">Problem:</span>
-              <span class="colab-val">Binary and multi-class classification benchmark with feature encoding and cross-validation.</span>
+          <div class="nb-specs">
+            <div class="spec-row">
+              <span class="spec-k">Problem</span>
+              <span class="spec-v">Diagnostic classification benchmark with categorical encoding, feature importance, and model evaluation.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Dataset:</span>
-              <span class="colab-val">Structured Health & Diagnostic Observation Dataset.</span>
+            <div class="spec-row">
+              <span class="spec-k">Dataset</span>
+              <span class="spec-v">Structured Diagnostic & Observation Dataset.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Methods:</span>
-              <span class="colab-val">K-Fold Cross-Validation, One-Hot Encoding, Decision Trees, Random Forest Classifiers.</span>
+            <div class="spec-row">
+              <span class="spec-k">Methods</span>
+              <span class="spec-v">K-Fold Cross-Validation, One-Hot Encoding, Decision Trees, Random Forests.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Libraries:</span>
-              <span class="colab-val chips">
+            <div class="spec-row">
+              <span class="spec-k">Libraries</span>
+              <span class="spec-v code-badges">
                 <code>Scikit-Learn</code><code>Pandas</code><code>NumPy</code><code>Matplotlib</code>
               </span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Metrics:</span>
-              <span class="colab-val">Accuracy, Precision, Recall, F1-Score, Confusion Matrix.</span>
+            <div class="spec-row">
+              <span class="spec-k">Metrics</span>
+              <span class="spec-v">Accuracy, Precision, Recall, F1-Score, Confusion Matrix.</span>
             </div>
           </div>
 
-          <div class="colab-links">
-            <a class="colab-btn colab-link-pending" href="#contact" title="Request notebook link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              <span>Open in Google Colab (Link Pending)</span>
-            </a>
-            <a class="colab-btn-ghost" href="#contact" title="Request GitHub notebook mirror">
-              <span>GitHub Notebook Mirror (Link Pending)</span>
+          <div class="nb-actions">
+            <a class="colab-action-btn" href="#contact" title="Request Google Colab Link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Google Colab (Link Pending Request)</span>
             </a>
           </div>
         </article>
 
         <!-- Notebook 3 -->
-        <article class="colab-card tilt-card" data-tilt>
-          <div class="colab-card-header">
-            <div class="colab-icon-badge">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              <span>NOTEBOOK 03</span>
-            </div>
-            <span class="colab-status">In Staging</span>
+        <article class="notebook-card tilt-element">
+          <div class="nb-top">
+            <span class="nb-badge">LAB 03 // DEEP LEARNING</span>
+            <span class="nb-status">In Review</span>
           </div>
+          <h3>Neural Network Pattern Recognition</h3>
 
-          <h3 class="colab-title">Neural Network & Pattern Recognition Lab</h3>
-
-          <div class="colab-details">
-            <div class="colab-row">
-              <span class="colab-label">Problem:</span>
-              <span class="colab-val">Multi-layer perceptron (MLP) architecture design for handwritten digit and pattern recognition.</span>
+          <div class="nb-specs">
+            <div class="spec-row">
+              <span class="spec-k">Problem</span>
+              <span class="spec-v">Multi-layer perceptron (MLP) architecture design for handwritten digit and visual pattern recognition.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Dataset:</span>
-              <span class="colab-val">Benchmark Digit Recognition (MNIST / Tabular Image Matrix).</span>
+            <div class="spec-row">
+              <span class="spec-k">Dataset</span>
+              <span class="spec-v">Benchmark Digit Matrix (MNIST / Greyscale Arrays).</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Methods:</span>
-              <span class="colab-val">Dense Neural Layers, ReLU & Softmax Activations, Adam Optimization, Categorical Loss Tracking.</span>
+            <div class="spec-row">
+              <span class="spec-k">Methods</span>
+              <span class="spec-v">Dense Neural Layers, ReLU & Softmax Activations, Adam Optimizer, Categorical Loss.</span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Libraries:</span>
-              <span class="colab-val chips">
+            <div class="spec-row">
+              <span class="spec-k">Libraries</span>
+              <span class="spec-v code-badges">
                 <code>TensorFlow</code><code>Keras</code><code>NumPy</code><code>Matplotlib</code>
               </span>
             </div>
-            <div class="colab-row">
-              <span class="colab-label">Metrics:</span>
-              <span class="colab-val">Training Loss, Validation Loss, Multi-Class Accuracy.</span>
+            <div class="spec-row">
+              <span class="spec-k">Metrics</span>
+              <span class="spec-v">Training Loss, Validation Loss, Accuracy Curves.</span>
             </div>
           </div>
 
-          <div class="colab-links">
-            <a class="colab-btn colab-link-pending" href="#contact" title="Request notebook link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              <span>Open in Google Colab (Link Pending)</span>
-            </a>
-            <a class="colab-btn-ghost" href="#contact" title="Request GitHub notebook mirror">
-              <span>GitHub Notebook Mirror (Link Pending)</span>
+          <div class="nb-actions">
+            <a class="colab-action-btn" href="#contact" title="Request Google Colab Link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Google Colab (Link Pending Request)</span>
             </a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section shell reveal">
-      <div class="section-heading">
+    <!-- PROFESSIONAL EXPERIENCE TIMELINE -->
+    <section id="experience" class="section shell scroll-reveal">
+      <div class="section-header-flex">
         <div>
-          <p class="kicker">05 / EXPERIENCE</p>
-          <h2>Learning by <em>doing.</em></h2>
+          <div class="section-label">
+            <span class="label-number">05</span>
+            <span class="label-line"></span>
+            <span class="label-text">EXPERIENCE</span>
+          </div>
+          <h2>Industry <em class="cyan-highlight">practice.</em></h2>
         </div>
-        <p>Real-world professional practice, digital operations, and collaborative workplace experience.</p>
+        <p class="section-intro">
+          Professional operations, digital collaboration setups, and enterprise team communication.
+        </p>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="time-meta">
-            <span class="time-badge">MAR 2024 — AUG 2024</span>
-            <span class="time-dot" aria-hidden="true"></span>
+      <div class="modern-timeline">
+        <div class="timeline-row">
+          <div class="timeline-meta-col">
+            <span class="date-tag">MAR 2024 — AUG 2024</span>
+            <span class="timeline-pulse-node" aria-hidden="true"></span>
           </div>
 
-          <div class="time-body tilt-card" data-tilt>
-            <div class="time-header">
+          <div class="timeline-card tilt-element">
+            <div class="timeline-card-header">
               <div>
                 <h3>Marketing Intern</h3>
-                <p class="org">Bank of Ceylon · Southern Province Office</p>
+                <p class="company-name">Bank of Ceylon · Southern Province Office</p>
               </div>
-              <span class="internship-tag">Internship</span>
+              <span class="role-pill">Internship</span>
             </div>
 
-            <ul class="experience-list">
+            <ul class="role-highlights">
               <li>
-                <strong>Digital Meeting Setup & Tech Support:</strong> Supported scheduling, audio-visual technical configuration, and digital collaboration platform setups for regional meetings and briefings.
+                <strong>Digital Meeting Setup & Audio-Visual Systems:</strong> Configured digital video conference equipment, platform configurations, and technical troubleshooting for regional executive sessions.
               </li>
               <li>
-                <strong>Data Entry & Structured Organization:</strong> Cleaned, categorized, and audited customer record datasets for promotional outreach and administrative workflows.
+                <strong>Data Entry & Structured Record Organization:</strong> Cleaned, cataloged, and organized customer record datasets to improve operational workflows and targeted branch marketing initiatives.
               </li>
               <li>
-                <strong>Banking Product Outreach:</strong> Collaborated with senior officers to introduce modern digital banking solutions and self-banking services to customers.
+                <strong>Banking Product Outreach:</strong> Collaborated with senior officers to introduce digital banking solutions and self-banking services to customers across the region.
               </li>
               <li>
-                <strong>Teamwork & Cross-Department Coordination:</strong> Worked with cross-functional provincial banking teams, helping organize operational documentation and reporting materials.
+                <strong>Teamwork & Cross-Department Collaboration:</strong> Worked closely with provincial department teams to coordinate regional communications and operational reporting materials.
               </li>
               <li>
-                <strong>Client Communication:</strong> Strengthened direct customer communication by clarifying service workflows, answering general inquiries, and maintaining professional standards.
+                <strong>Client Communication:</strong> Communicated directly with clients, answering inquiries, guiding customers through self-banking adoption, and upholding professional standards.
               </li>
             </ul>
 
-            <div class="experience-competencies">
+            <div class="competency-chips">
               <span>Digital Platform Setup</span>
               <span>Data Entry & Auditing</span>
               <span>Banking Outreach</span>
@@ -686,125 +751,146 @@
       </div>
     </section>
 
-    <!-- Education & Growth Section -->
-    <section id="education" class="section shell reveal">
-      <div class="section-heading">
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section shell scroll-reveal">
+      <div class="section-header-flex">
         <div>
-          <p class="kicker">06 / EDUCATION & GROWTH</p>
-          <h2>Always <em>learning.</em></h2>
+          <div class="section-label">
+            <span class="label-number">06</span>
+            <span class="label-line"></span>
+            <span class="label-text">ACADEMIC BACKGROUND</span>
+          </div>
+          <h2>Continuous <em class="cyan-highlight">growth.</em></h2>
         </div>
-        <p>Academic milestones, specialized technical training, and continuous professional development.</p>
+        <p class="section-intro">
+          Academic foundation, specialized DevOps coursework, and certifications.
+        </p>
       </div>
 
-      <div class="education-grid">
-        <article class="edu-card tilt-card" data-tilt>
-          <span class="edu-year">2025 — 2027</span>
+      <div class="education-cards-grid">
+        <article class="edu-card tilt-element">
+          <span class="edu-timeline">2025 — 2027</span>
           <h3>Higher National Diploma in IT</h3>
-          <p class="edu-org">Institute of Technology, University of Moratuwa (ITUM)</p>
-          <p class="edu-desc">Comprehensive curriculum covering Software Engineering, Object-Oriented Programming (Java), Data Structures, Systems Architecture, and Database Systems (MySQL).</p>
+          <p class="institution">Institute of Technology, University of Moratuwa (ITUM)</p>
+          <p class="edu-detail">Comprehensive degree covering Software Engineering, Object-Oriented Programming (Java), Data Structures, Systems Architecture, and Database Systems (MySQL).</p>
         </article>
 
-        <article class="edu-card tilt-card" data-tilt>
-          <span class="edu-year highlight">ONGOING</span>
+        <article class="edu-card tilt-element active-learning">
+          <span class="edu-timeline current">ONGOING TRAINING</span>
           <h3>DevOps Training Course</h3>
-          <p class="edu-org">IDET · Lecturer: Nuwan Kawshalya</p>
-          <p class="edu-desc">Practical hands-on training focusing on Ubuntu Linux administration, Docker containerization, container networking, CI/CD fundamentals, and VMware virtualization.</p>
+          <p class="institution">IDET · Lecturer: Nuwan Kawshalya</p>
+          <p class="edu-detail">Practical hands-on training focusing on Ubuntu Linux administration, Docker containerization, container networking, CI/CD fundamentals, and VMware virtualization.</p>
         </article>
 
-        <article class="edu-card tilt-card" data-tilt>
-          <span class="edu-year">2026</span>
+        <article class="edu-card tilt-element">
+          <span class="edu-timeline">2026</span>
           <h3>AI/ML Engineer — Stage 1</h3>
-          <p class="edu-org">SLIIT Certification</p>
-          <p class="edu-desc">Foundational machine learning coursework covering Python data science libraries (NumPy, Pandas, Scikit-Learn), exploratory data analysis, and predictive model building.</p>
+          <p class="institution">SLIIT Certification</p>
+          <p class="edu-detail">Foundational machine learning coursework covering Python scientific libraries (NumPy, Pandas, Scikit-Learn), exploratory data analysis, and predictive model building.</p>
         </article>
 
-        <article class="edu-card tilt-card" data-tilt>
-          <span class="edu-year">2021 / 2018</span>
-          <h3>G.C.E. Advanced Level & Ordinary Level</h3>
-          <p class="edu-org">St. Thomas' College, Matara</p>
-          <p class="edu-desc">Secondary education with focus on Mathematics, Science, and Information Technology, establishing strong analytical and logical foundations.</p>
+        <article class="edu-card tilt-element">
+          <span class="edu-timeline">2021 / 2018</span>
+          <h3>G.C.E. A/L & O/L</h3>
+          <p class="institution">St. Thomas' College, Matara</p>
+          <p class="edu-detail">Secondary education with focus on Mathematics, Science, and Information Technology, establishing analytical and logical foundations.</p>
         </article>
       </div>
     </section>
 
-    <!-- Resume / Download CV Section -->
-    <section id="resumes" class="section shell resumes reveal">
-      <div class="resumes-header">
-        <p class="kicker">07 / DOWNLOAD MY RESUME</p>
-        <h2>Two paths.<br><em>One ambition.</em></h2>
-        <p class="resumes-intro">Tailored resumes showcasing focused skill sets for specialized technical roles. Download the version aligned with your hiring needs.</p>
-      </div>
+    <!-- DOWNLOAD RESUMES SECTION -->
+    <section id="resumes" class="section shell scroll-reveal">
+      <div class="resumes-layout">
+        <div class="resumes-copy">
+          <div class="section-label">
+            <span class="label-number">07</span>
+            <span class="label-line"></span>
+            <span class="label-text">DOWNLOAD CV</span>
+          </div>
+          <h2>Two career paths.<br><em class="cyan-highlight">One standard.</em></h2>
+          <p class="resumes-sub">
+            Targeted curriculum vitae tailored for specialized technical openings. Download the version aligned with your technical hiring requirements.
+          </p>
+        </div>
 
-      <div class="resume-links">
-        <!-- DevOps CV -->
-        <a class="resume-card tilt-card" href="Ravindu_DevOps_CV.pdf" download="Ravindu_DevOps_CV.pdf" aria-label="Download Ravindu DevOps Resume (PDF)" data-tilt>
-          <div class="resume-card-left">
-            <div class="resume-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="18"/><line x1="15" y1="15" x2="12" y2="18"/></svg>
+        <div class="resumes-stack">
+          <!-- DevOps CV -->
+          <a class="cv-download-card tilt-element" href="Ravindu_DevOps_CV.pdf" download="Ravindu_DevOps_CV.pdf" aria-label="Download Ravindu DevOps Resume (PDF)">
+            <div class="cv-left">
+              <div class="cv-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="18"/><line x1="15" y1="15" x2="12" y2="18"/></svg>
+              </div>
+              <div class="cv-info">
+                <h4>DevOps-Focused Resume</h4>
+                <p>Cloud · Linux · Docker · CI/CD · Infrastructure</p>
+              </div>
             </div>
-            <div>
-              <b>DevOps-focused CV</b>
-              <small>Cloud · Infrastructure · Docker · Linux · CI/CD</small>
+            <div class="cv-right">
+              <span class="pdf-tag">PDF</span>
+              <strong>Download ↓</strong>
             </div>
-          </div>
-          <div class="resume-card-right">
-            <span class="file-badge">PDF</span>
-            <strong>Download ↓</strong>
-          </div>
-        </a>
+          </a>
 
-        <!-- Software Engineering CV -->
-        <a class="resume-card tilt-card" href="Ravindu_Software_Engineering_CV.pdf" download="Ravindu_Software_Engineering_CV.pdf" aria-label="Download Ravindu Software Engineering Resume (PDF)" data-tilt>
-          <div class="resume-card-left">
-            <div class="resume-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="18"/><line x1="15" y1="15" x2="12" y2="18"/></svg>
+          <!-- Software Engineering CV -->
+          <a class="cv-download-card tilt-element" href="Ravindu_Software_Engineering_CV.pdf" download="Ravindu_Software_Engineering_CV.pdf" aria-label="Download Ravindu Software Engineering Resume (PDF)">
+            <div class="cv-left">
+              <div class="cv-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="18"/><line x1="15" y1="15" x2="12" y2="18"/></svg>
+              </div>
+              <div class="cv-info">
+                <h4>Software Engineering Resume</h4>
+                <p>Full Stack · Java · React · Database Architecture · Agile</p>
+              </div>
             </div>
-            <div>
-              <b>Software Engineering CV</b>
-              <small>Full Stack · Java · React · Database Architecture · Agile</small>
+            <div class="cv-right">
+              <span class="pdf-tag">PDF</span>
+              <strong>Download ↓</strong>
             </div>
-          </div>
-          <div class="resume-card-right">
-            <span class="file-badge">PDF</span>
-            <strong>Download ↓</strong>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section reveal">
-      <div class="shell">
-        <p class="kicker">08 / GET IN TOUCH</p>
-        <h2>Let's build<br><em>something meaningful.</em></h2>
-        <p>I'm actively seeking internship opportunities, technical collaborations, and conversations about DevOps, Cloud, and Software Engineering.</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-hub shell scroll-reveal">
+      <div class="contact-inner">
+        <div class="section-label">
+          <span class="label-number">08</span>
+          <span class="label-line"></span>
+          <span class="label-text">GET IN TOUCH</span>
+        </div>
+        <h2>Let's build <br><em class="cyan-highlight">something exceptional.</em></h2>
+        <p class="contact-lead">
+          I am actively seeking internship opportunities, technical collaborations, and discussions around DevOps automation, cloud architecture, and modern software engineering.
+        </p>
 
-        <!-- Direct Email Interaction -->
-        <div class="email-interactive-box">
-          <a class="email-address" href="mailto:Ravinduweerasinghe5739422@gmail.com" id="userEmail">
+        <!-- Direct Email Interaction Hub -->
+        <div class="email-badge-hub">
+          <a class="email-link" href="mailto:Ravinduweerasinghe5739422@gmail.com" id="userEmail">
             Ravinduweerasinghe5739422@gmail.com
           </a>
-          <button class="copy-email-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <button class="copy-action-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             <span id="copyFeedback">Copy Email</span>
           </button>
         </div>
 
-        <div class="contact-links">
-          <a href="mailto:Ravinduweerasinghe5739422@gmail.com" aria-label="Send Email">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>Email ↗</span>
+        <!-- Social Grid -->
+        <div class="contact-grid-links">
+          <a href="mailto:Ravinduweerasinghe5739422@gmail.com" class="c-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Send Direct Email ↗</span>
           </a>
-          <a href="https://www.linkedin.com/in/ravindu-weerasinghe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile (opens in new tab)">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            <span>LinkedIn ↗</span>
+          <a href="https://www.linkedin.com/in/ravindu-weerasinghe/" target="_blank" rel="noopener noreferrer" class="c-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn Profile ↗</span>
           </a>
-          <a href="https://github.com/RAVINDUWEERASINGHE2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile (opens in new tab)">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            <span>GitHub ↗</span>
+          <a href="https://github.com/RAVINDUWEERASINGHE2002" target="_blank" rel="noopener noreferrer" class="c-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub Profile ↗</span>
           </a>
-          <a href="tel:+94705739422" aria-label="Direct Phone Call">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+94705739422" class="c-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>+94 70 573 9422 ↗</span>
           </a>
         </div>
@@ -812,12 +898,20 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer-wrapper">
-    <div class="shell footer-inner">
-      <span>© <span id="year">2026</span> RAVINDU LAKSHAN WEERASINGHE</span>
-      <span>DESIGNED WITH PURPOSE · SRI LANKA</span>
-      <a href="#home" class="back-to-top" aria-label="Scroll back to top">BACK TO TOP ↑</a>
+  <!-- Modern Dark Footer -->
+  <footer class="footer-bar">
+    <div class="shell footer-flex">
+      <div class="footer-left">
+        <span>© <span id="year">2026</span> RAVINDU LAKSHAN WEERASINGHE</span>
+        <span class="footer-sep">·</span>
+        <span>DESIGNED WITH PURPOSE</span>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="scroll-top-link" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
     </div>
   </footer>
 
