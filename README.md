@@ -20,8 +20,6 @@ You have three easy ways to run this project locally:
 
 1. **Using npm (Recommended):**
    ```bash
-   npm start
-   # or
    npm run dev
    ```
    Starts a local server at `http://localhost:3000` and automatically opens your default browser.

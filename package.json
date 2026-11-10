@@ -4,8 +4,8 @@
   "private": true,
   "description": "Ravindu Lakshan Weerasinghe - DevOps & Software Engineering Portfolio",
   "scripts": {
-    "start": "node scripts/server.js",
     "dev": "node scripts/server.js",
+    "local": "node scripts/server.js",
     "preview": "node scripts/server.js"
   },
   "keywords": [

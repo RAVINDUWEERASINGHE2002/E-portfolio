@@ -1,4 +1,4 @@
 @echo off
 echo Starting Ravindu Portfolio...
-npm start
+npm run dev
 pause
