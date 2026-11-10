@@ -1514,10 +1514,19 @@ h2 {
   border-radius: var(--radius-xs);
 }
 
+.nb-status.active-status {
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+  border-color: rgba(52, 211, 153, 0.3);
+}
+
 .nb-actions {
   margin-top: auto;
   border-top: 1px solid var(--border-glass);
   padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .colab-action-btn {
@@ -1527,20 +1536,45 @@ h2 {
   width: 100%;
   gap: 8px;
   padding: 10px 14px;
+  font-family: var(--font-heading);
   font-size: 12.5px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: var(--radius-xs);
-  background: rgba(0, 240, 255, 0.06);
-  border: 1px solid rgba(0, 240, 255, 0.25);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
   color: var(--cyan-electric);
   transition: all 0.2s var(--ease-spring);
 }
 
 .colab-action-btn:hover {
-  background: rgba(0, 240, 255, 0.16);
+  background: rgba(0, 240, 255, 0.2);
   border-color: var(--cyan-electric);
   color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px var(--cyan-glow);
+}
+
+.colab-action-btn.primary-colab {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.15) 0%, rgba(56, 189, 248, 0.08) 100%);
+}
+
+.colab-github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px;
+  transition: all 0.2s var(--ease-spring);
+}
+
+.colab-github-link:hover {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* --------------------------------------------------------------------------
