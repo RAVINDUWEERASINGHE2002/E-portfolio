@@ -4,7 +4,8 @@ const path = require('path');
 const { exec } = require('child_process');
 
 let port = parseInt(process.env.PORT, 10) || 3000;
-const ROOT = path.resolve(__dirname);
+// Support running from root or from scripts folder
+const ROOT = path.resolve(__dirname, '..');
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -27,7 +28,6 @@ const server = http.createServer((req, res) => {
     safePath = '/index.html';
   }
 
-  // Strip leading slashes and resolve against absolute ROOT
   const relativePath = safePath.replace(/^[\/\\]+/, '');
   const filePath = path.resolve(ROOT, relativePath);
 
@@ -82,7 +82,7 @@ function startServer(p) {
   server.listen(p, () => {
     const url = `http://localhost:${p}`;
     console.log(`\n==================================================`);
-    console.log(`  🚀 Ravindu's Portfolio is running!`);
+    console.log(`  🚀 Ravindu's Portfolio is running locally!`);
     console.log(`  🌐 URL: ${url}`);
     console.log(`  🛑 Press Ctrl+C in this terminal to stop`);
     console.log(`==================================================\n`);
