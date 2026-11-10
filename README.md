@@ -36,14 +36,15 @@ You have three easy ways to run this project locally:
 
 ## Publish to GitHub & Deploy to Vercel
 
-### Step 1: Push to GitHub
+### Step 1: Repository
+The project is connected to:
+`https://github.com/RAVINDUWEERASINGHE2002/E-portfolio.git`
+
+To push future updates:
 ```bash
-git init
 git add .
-git commit -m "feat: upgrade to premium recruiter-focused portfolio"
-git branch -M main
-git remote add origin https://github.com/RAVINDUWEERASINGHE2002/your-repo-name.git
-git push -u origin main
+git commit -m "your commit message"
+git push
 ```
 
 ### Step 2: Deploy on Vercel
