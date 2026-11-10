@@ -4,7 +4,7 @@ const path = require('path');
 const { exec } = require('child_process');
 
 let port = parseInt(process.env.PORT, 10) || 3000;
-const ROOT = __dirname;
+const ROOT = path.resolve(__dirname);
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -27,9 +27,13 @@ const server = http.createServer((req, res) => {
     safePath = '/index.html';
   }
 
-  const filePath = path.normalize(path.join(ROOT, safePath));
-  if (!filePath.startsWith(ROOT)) {
-    res.writeHead(403, { 'Content-Type': 'text/plain' });
+  // Strip leading slashes and resolve against absolute ROOT
+  const relativePath = safePath.replace(/^[\/\\]+/, '');
+  const filePath = path.resolve(ROOT, relativePath);
+
+  // Security check: ensure path stays within ROOT
+  if (!filePath.toLowerCase().startsWith(ROOT.toLowerCase())) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('403 Forbidden');
     return;
   }
@@ -43,7 +47,7 @@ const server = http.createServer((req, res) => {
 
     let finalPath = filePath;
     if (stats.isDirectory()) {
-      finalPath = path.join(filePath, 'index.html');
+      finalPath = path.resolve(filePath, 'index.html');
     }
 
     const ext = path.extname(finalPath).toLowerCase();
@@ -51,7 +55,7 @@ const server = http.createServer((req, res) => {
 
     fs.readFile(finalPath, (readErr, content) => {
       if (readErr) {
-        res.writeHead(500, { 'Content-Type': 'text/plain' });
+        res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
         res.end(`500 Internal Server Error: ${readErr.message}`);
         return;
       }
@@ -78,7 +82,7 @@ function startServer(p) {
   server.listen(p, () => {
     const url = `http://localhost:${p}`;
     console.log(`\n==================================================`);
-    console.log(`  🚀 Portfolio is running!`);
+    console.log(`  🚀 Ravindu's Portfolio is running!`);
     console.log(`  🌐 URL: ${url}`);
     console.log(`  🛑 Press Ctrl+C in this terminal to stop`);
     console.log(`==================================================\n`);
